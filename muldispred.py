@@ -36,19 +36,24 @@ Created on Sun Jan 26 00:11:57 2025
 #     os.system("pip install streamlit-option-menu")
 #     from streamlit_option_menu import option_menu
 
-# import pickle
-# import streamlit as st
 # from streamlit_option_menu import option_menu
+import pickle
+import streamlit as st
 
-import subprocess
-import sys
+# Sidebar navigation
+st.sidebar.title("Navigation")
+menu = ["Home", "Diabetes Prediction", "Heart Disease Prediction"]
+choice = st.sidebar.radio("Go to", menu)
 
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+# import subprocess
+# import sys
 
-install("streamlit-option-menu==0.4.0")
+# def install(package):
+#     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-from streamlit_option_menu import option_menu
+# install("streamlit-option-menu==0.4.0")
+
+# from streamlit_option_menu import option_menu
 
 
 # Loading the saved models
