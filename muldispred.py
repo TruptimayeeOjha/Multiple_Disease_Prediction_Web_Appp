@@ -26,9 +26,7 @@ Created on Sun Jan 26 00:11:57 2025
 #         - In conclusion, Parkinson's disease is a progressive neurological disorder that affects movement and coordination. While there is no cure for the disease, medications and therapies can help to manage symptoms and improve quality of life. Support and resources are available to help individuals and their families cope with the challenges of living with Parkinson's disease.
 #         """)
 
-import pickle
-import streamlit as st
-# from streamlit_option_menu import option_menu
+
 # import os
 # import streamlit as st
 
@@ -37,6 +35,10 @@ import streamlit as st
 # except ImportError:
 #     os.system("pip install streamlit-option-menu")
 #     from streamlit_option_menu import option_menu
+
+import pickle
+import streamlit as st
+from streamlit_option_menu import option_menu
 
 
 # Loading the saved models
