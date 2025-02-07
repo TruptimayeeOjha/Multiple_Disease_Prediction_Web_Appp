@@ -27,16 +27,16 @@ Created on Sun Jan 26 00:11:57 2025
 #         """)
 
 import pickle
-# import streamlit as st
-# from streamlit_option_menu import option_menu
-import os
 import streamlit as st
+# from streamlit_option_menu import option_menu
+# import os
+# import streamlit as st
 
-try:
-    from streamlit_option_menu import option_menu
-except ImportError:
-    os.system("pip install streamlit-option-menu")
-    from streamlit_option_menu import option_menu
+# try:
+#     from streamlit_option_menu import option_menu
+# except ImportError:
+#     os.system("pip install streamlit-option-menu")
+#     from streamlit_option_menu import option_menu
 
 
 # Loading the saved models
