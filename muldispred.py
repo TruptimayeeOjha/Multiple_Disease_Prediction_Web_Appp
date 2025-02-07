@@ -28,7 +28,13 @@ Created on Sun Jan 26 00:11:57 2025
 
 import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
+# from streamlit_option_menu import option_menu
+try:
+    from streamlit_option_menu import option_menu
+except ImportError:
+    import os
+    os.system("pip install streamlit-option-menu")
+    from streamlit_option_menu import option_menu
 
 # Loading the saved models
 diabetes_model = pickle.load(open('diabetes_disease.sav','rb'))
