@@ -36,8 +36,18 @@ Created on Sun Jan 26 00:11:57 2025
 #     os.system("pip install streamlit-option-menu")
 #     from streamlit_option_menu import option_menu
 
-import pickle
-import streamlit as st
+# import pickle
+# import streamlit as st
+# from streamlit_option_menu import option_menu
+
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("streamlit-option-menu==0.4.0")
+
 from streamlit_option_menu import option_menu
 
 
